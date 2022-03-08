@@ -11,7 +11,7 @@ pipeline {
         stage("Deploy") {
             steps{
             sshagent(['edu-server-creds']) {
-                sh """
+                sh """ 
                 scp -r -o StrictHostKeyChecking=no ${WORKSPACE}/build/ ubuntu@ip-IPAddress:/home/ubuntu/frontend_build/
                 """                
                 }
