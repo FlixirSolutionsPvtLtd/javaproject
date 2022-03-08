@@ -6,7 +6,6 @@ pipeline {
                 sh "npm install"
                 sh "npm run build"
                 sh "pwd" 
-                 
             }
         }
         stage("Deploy") {
