@@ -22,11 +22,11 @@ pipeline {
                 // sh 'chown -R root:jenkins target/'
                 // sh "cp -f target/*.jar /home/ubuntu"
                 // sh "java -version"
-                sh "ls"
-                sh "sudo chmod +x ./shcmd.sh"
-                sh "./shcmd.sh"
+//                 sh "ls"
+//                 sh "sudo chmod +x ./shcmd.sh"
+//                 sh "./shcmd.sh"
 
-                // sh "java -jar /var/lib/jenkins/workspace/java-pipline/target/api-0.0.1-SNAPSHOT.jar &"
+                sh "java -jar ./target/api-0.0.1-SNAPSHOT.jar &"
 
             }
         }
