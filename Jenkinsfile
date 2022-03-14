@@ -29,7 +29,7 @@ pipeline {
                 sh "java -jar ./target/api-0.0.1-SNAPSHOT.jar &"
 
             }
-        }
+        }. 
         //  stage("test"){
         //     steps{
         //         sh "ps -aux"
