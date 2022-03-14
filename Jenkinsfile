@@ -25,15 +25,9 @@ pipeline {
 //                 sh "ls"
 //                 sh "sudo chmod +x ./shcmd.sh"
 //                 sh "./shcmd.sh"
-
                 sh "java -jar ./target/api-0.0.1-SNAPSHOT.jar &"
 
             }
-        }. 
-        //  stage("test"){
-        //     steps{
-        //         sh "ps -aux"
-        //     }
-        // }
+        }
     }
 }
