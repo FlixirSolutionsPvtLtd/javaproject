@@ -30,7 +30,7 @@ public class PublicController {
     @GetMapping(value = {RestUrlConstants.PING})
     public String ping() {
         log.info("Pinged Successfully");
-        return "Ping successful!!-deployed. updated ";
+        return "Ping successful!!-deployed. updated (Checked Piyush)";
     }
 
     @ApiOperation(value = "Api to register User")
